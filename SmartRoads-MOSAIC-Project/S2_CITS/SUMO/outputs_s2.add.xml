@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+    <!-- Edge data collection -->
+    <edgeData id="edgedata_s2" file="D:/smart roads/ojas_SMARTROAD/S2_CITS/SUMO/outputs/edgedata_s2_C-ITS.xml" begin="0" end="3600" period="60" excludeEmpty="true"/>
+
+    <!-- RSU Location as a Poly (just to mark it in the network) -->
+    <poly id="RSU_Diversion" type="rsu" color="red" fill="1" layer="1" shape="550,150 560,150 560,160 550,160 550,150"/>
+</additional>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+    <vType id="human_aggressive" accel="2.5" decel="6" emergencyDecel="7.0" length="5" minGap="1" maxSpeed="40" speedFactor="normc(1.1,0.1,0.7,2)" tau="1.2" sigma="0.5" lcSpeedGain="10" lcStrategic="1" lcKeepRight="1" lcSpeedGainLookahead="1.0" probability="0.30" color="1,0,0"/>
+    <vType id="human_normal" accel="2" decel="5" emergencyDecel="7.0" length="5" minGap="1.5" maxSpeed="40" speedFactor="normc(1,0.15,0.5,1.5)" tau="1.5" sigma="0.5" lcSpeedGain="5" lcStrategic="3" lcKeepRight="3" lcSpeedGainLookahead="2" probability="0.50" color="0,1,0"/>
+    <vType id="human_slow" accel="2" decel="4.5" emergencyDecel="6.0" length="5" minGap="2" maxSpeed="40" speedFactor="normc(0.9,0.1,0.2,1.2)" tau="1.8" sigma="0.2" lcSpeedGain="1" lcStrategic="6" lcKeepRight="6" lcSpeedGainLookahead="4" probability="0.20" color="0,0,1"/>
+    <vType id="incident_vehicle" accel="1.0" decel="4.5" emergencyDecel="6.0" length="5" minGap="1" maxSpeed="10" color="1,1,0"/>
+
+    <vTypeDistribution id="humanDist" vTypes="human_aggressive human_normal human_slow"/>
+
+    
+    <flow id="main_lane0" begin="0" end="3600" vehsPerHour="666.67" type="humanDist" from="983584629" to="106874397#0" departLane="0" departPos="0" departSpeed="avg"/>
+    <flow id="main_lane1" begin="0" end="3600" vehsPerHour="666.67" type="humanDist" from="983584629" to="106874397#0" departLane="1" departPos="0" departSpeed="avg"/>
+    <flow id="main_lane2" begin="0" end="3600" vehsPerHour="666.67" type="humanDist" from="983584629" to="106874397#0" departLane="2" departPos="0" departSpeed="avg"/>
+
+    <route id="accident_route_0" edges="426900863#1 426900863#1-AddedOffRampEdge 163006129">
+        <stop lane="426900863#1_0" endPos="300" duration="900"/>
+    </route>
+    <route id="accident_route_1" edges="426900863#1 426900863#1-AddedOffRampEdge 163006129">
+        <stop lane="426900863#1_1" endPos="300" duration="900"/>
+    </route>
+    <route id="accident_route_2" edges="426900863#1 426900863#1-AddedOffRampEdge 163006129">
+        <stop lane="426900863#1_2" endPos="300" duration="900"/>
+    </route>
+
+    <vehicle id="accident_block_lane0" type="incident_vehicle" route="accident_route_0" depart="600" departLane="0" departPos="295" departSpeed="0"/>
+    <vehicle id="accident_block_lane1" type="incident_vehicle" route="accident_route_1" depart="600" departLane="1" departPos="295" departSpeed="0"/>
+    <vehicle id="accident_block_lane2" type="incident_vehicle" route="accident_route_2" depart="600" departLane="2" departPos="295" departSpeed="0"/>
+</routes>

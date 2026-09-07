@@ -1,0 +1,21 @@
+<configuration>
+    <input>
+        <net-file value="tangenziale.net.xml"/>
+        <route-files value="tangenziale.rou.xml"/>
+        <additional-files value="outputs_s0.add.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+
+    <processing>
+        <step-length value="0.1"/>
+    </processing>
+
+    <output>
+        <tripinfo-output value="D:/smart roads/ojas_SMARTROAD/S0_NoITS/SUMO/outputs/tripinfo_s0_noITS.xml"/>
+        <vehroute-output value="D:/smart roads/ojas_SMARTROAD/S0_NoITS/SUMO/outputs/vehroute_s0_noITS.xml"/>
+    </output>
+</configuration>

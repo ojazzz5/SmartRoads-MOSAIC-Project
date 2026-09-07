@@ -1,0 +1,8 @@
+{
+    "prototypes": [
+        { "name": "human_aggressive" },
+        { "name": "human_normal" },
+        { "name": "human_slow" }
+    ],
+    "vehicles": []
+}

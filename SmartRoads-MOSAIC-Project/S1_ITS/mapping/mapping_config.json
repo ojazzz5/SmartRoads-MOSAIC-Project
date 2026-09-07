@@ -1,0 +1,14 @@
+{
+    "prototypes": [
+        { "name": "human_aggressive", "applications": ["org.example.mosaic.ItsVehicleApp"] },
+        { "name": "human_normal", "applications": ["org.example.mosaic.ItsVehicleApp"] },
+        { "name": "human_slow", "applications": ["org.example.mosaic.ItsVehicleApp"] }
+    ],
+    "tmcs": [{
+        "name": "HighwayManagement",
+        "applications": ["org.example.mosaic.ItsTmcApp"],
+        "inductionLoops": [],
+        "laneAreaDetectors": ["its_detector_3", "its_detector_4", "its_detector_5"]
+    }],
+    "vehicles": []
+}

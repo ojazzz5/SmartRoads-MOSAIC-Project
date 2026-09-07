@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+
+    <!-- ============================================================
+         EDGE DATA COLLECTOR
+         
+         Records speed, density, occupancy, timeLoss for every edge 
+         every 60 seconds. This is the primary data source for 
+         shockwave analysis — we observe how congestion spreads 
+         from the accident edge upstream to the reference edge.
+         ============================================================ -->
+    <edgeData id="edgeData_s0"
+              file="D:/smart roads/ojas_SMARTROAD/S0_NoITS/SUMO/outputs/edgedata_s0_noITS.xml"
+              begin="0" end="3600"
+              period="60"
+              excludeEmpty="true"/>
+    
+
+    <!-- ============================================================
+         LANE AREA DETECTORS on Reference Edge (508357075)
+         
+         Theory: These detectors act like real-world induction loops.
+         They measure mean speed and density on each lane of the 
+         reference edge. In S0, they are passive observers only — 
+         no TMC reads them. But they let us detect when the 
+         shockwave arrives (speed drops below threshold).
+         
+         In the ITS scenario (S1), similar detectors are what the 
+         TMC uses to trigger VMS activation.
+         ============================================================ -->
+    <laneAreaDetector id="its_detector_0" lane="508357075_0" pos="0" endPos="-1" freq="10" file="D:/smart roads/ojas_SMARTROAD/S0_NoITS/SUMO/outputs/detector_s0.xml"/>
+    <laneAreaDetector id="its_detector_1" lane="508357075_1" pos="0" endPos="-1" freq="10" file="D:/smart roads/ojas_SMARTROAD/S0_NoITS/SUMO/outputs/detector_s0.xml"/>
+    <laneAreaDetector id="its_detector_2" lane="508357075_2" pos="0" endPos="-1" freq="10" file="D:/smart roads/ojas_SMARTROAD/S0_NoITS/SUMO/outputs/detector_s0.xml"/>
+
+</additional>

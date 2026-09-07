@@ -1,0 +1,13 @@
+{
+    "messageCacheTime": "30s",
+    "encodePayloads": true,
+    "eventSchedulerThreads": 1,
+    "navigationConfiguration": {
+        "type": "database"
+    },
+    "perceptionConfiguration": {
+        "vehicleIndex": { "enabled": true },
+        "trafficLightIndex": { "enabled": true },
+        "wallIndex": { "enabled": false }
+    }
+}

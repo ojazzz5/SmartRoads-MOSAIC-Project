@@ -1,0 +1,32 @@
+{
+    "simulation": {
+        "id": "Tangenziale_S2_C-ITS",
+        "duration": "3600s",
+        "randomSeed": 268965854,
+        "projection": {
+            "centerCoordinates": {
+                "latitude": 40.8562,
+                "longitude": 14.2205
+            },
+            "cartesianOffset": {
+                "x": -422568.02,
+                "y": -4520272.08
+            }
+        },
+        "network": {
+            "netMask": "255.255.0.0",
+            "vehicleNet": "10.1.0.0",
+            "rsuNet": "10.2.0.0",
+            "tlNet": "10.3.0.0",
+            "csNet": "10.4.0.0",
+            "serverNet": "10.5.0.0",
+            "tmcNet": "10.6.0.0"
+        }
+    },
+    "federates": {
+        "application": true,
+        "sns": true,
+        "output": true,
+        "sumo": true
+    }
+}

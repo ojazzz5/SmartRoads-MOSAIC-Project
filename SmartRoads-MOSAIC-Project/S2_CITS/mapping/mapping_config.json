@@ -1,0 +1,18 @@
+{
+    "prototypes": [
+        { "name": "human_aggressive", "applications": ["org.example.mosaic.VehicleCitsApp"] },
+        { "name": "human_normal", "applications": ["org.example.mosaic.VehicleCitsApp"] },
+        { "name": "human_slow", "applications": ["org.example.mosaic.VehicleCitsApp"] }
+    ],
+    "servers": [],
+    "rsus": [
+        {
+            "name": "RSU_Diversion",
+            "applications": ["org.example.mosaic.RsuCitsApp"],
+            "position": {
+                "latitude": 40.846386,
+                "longitude": 14.216081
+            }
+        }
+    ]
+}

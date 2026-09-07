@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+    <edgeData id="edgeData_s1" file="D:/smart roads/ojas_SMARTROAD/S1_ITS/SUMO/outputs/edgedata_s1_ITS.xml" begin="0" end="3600" period="60" excludeEmpty="true"/>
+
+    <!-- Observation Detectors (Same as S0) -->
+    <laneAreaDetector id="its_detector_0" lane="508357075_0" pos="0" endPos="-1" freq="10" file="D:/smart roads/ojas_SMARTROAD/S1_ITS/SUMO/outputs/detector_s1.xml"/>
+    <laneAreaDetector id="its_detector_1" lane="508357075_1" pos="0" endPos="-1" freq="10" file="D:/smart roads/ojas_SMARTROAD/S1_ITS/SUMO/outputs/detector_s1.xml"/>
+    <laneAreaDetector id="its_detector_2" lane="508357075_2" pos="0" endPos="-1" freq="10" file="D:/smart roads/ojas_SMARTROAD/S1_ITS/SUMO/outputs/detector_s1.xml"/>
+
+    <!-- TMC Detectors for VMS Activation -->
+    <laneAreaDetector id="its_detector_3" lane="508357075-AddedOffRampEdge_0" pos="0" endPos="75" freq="10" file="D:/smart roads/ojas_SMARTROAD/S1_ITS/SUMO/outputs/detector_s1_vms.xml"/>
+    <laneAreaDetector id="its_detector_4" lane="508357075-AddedOffRampEdge_1" pos="0" endPos="75" freq="10" file="D:/smart roads/ojas_SMARTROAD/S1_ITS/SUMO/outputs/detector_s1_vms.xml"/>
+    <laneAreaDetector id="its_detector_5" lane="508357075-AddedOffRampEdge_2" pos="0" endPos="75" freq="10" file="D:/smart roads/ojas_SMARTROAD/S1_ITS/SUMO/outputs/detector_s1_vms.xml"/>
+</additional>
